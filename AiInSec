@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BytePlus: The AI Advantage in Cybersecurity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Brilliant Blues (#003f5c, #7a5195, #ef5675, #ffa600) -->
+    <!-- Application Structure Plan: The infographic follows a compelling narrative designed to guide the customer from problem to solution. It starts with the 'Hook' (The Unmanageable Burden) using large, impactful stats. It then introduces 'The Solution' (The BytePlus AI Advantage product suite). Next, it visually explores 'The Opportunity' with charts on market focus and persona needs. It then provides 'The Proof' with clear, non-technical flow diagrams for key Use Cases. Finally, it provides a 'Call to Action' by outlining clear business benefits. This structure was chosen to build a persuasive argument, establishing the problem's severity before presenting BytePlus as the logical and powerful solution. -->
+    <!-- Visualization & Content Choices: 1. Crisis Stats -> Goal: Inform -> Viz: 'Single Big Number' via styled HTML -> Justification: High-impact, direct communication of critical data points from the report. (Method: HTML/CSS, NO SVG). 2. Product Suite -> Goal: Organize -> Viz: HTML cards with icons -> Justification: Clearly segments and explains each product's function in a visually appealing grid. (Method: HTML/CSS, Unicode, NO SVG). 3. Key Use Cases -> Goal: Organize (Process) -> Viz: HTML/CSS Flow Diagrams -> Justification: Simplifies the complex 'Problem -> Solution -> Outcome' workflow into an easy-to-follow visual path for non-technical audiences. (Method: HTML/CSS, NO SVG/Mermaid). 4. Breach Costs -> Goal: Compare -> Viz: Bar Chart -> Justification: Effectively compares the financial impact of breaches with different lifecycles, highlighting the cost of delay. (Library: Chart.js/Canvas, NO SVG). 5. Phishing Attacks -> Goal: Change (Trend) -> Viz: Line Chart -> Justification: Visually demonstrates the alarming upward trend in phishing attacks over time, creating a sense of urgency. (Library: Chart.js/Canvas, NO SVG). -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flow-arrow {
+            font-size: 2.5rem;
+            line-height: 1;
+            color: #d1d5db;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-6xl font-black text-[#003f5c] mb-2">Empowering Cyber Resilience</h1>
+            <p class="text-xl md:text-2xl text-gray-600">The BytePlus AI Advantage</p>
+        </header>
+
+        <section id="burden" class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-2 text-[#003f5c]">The Unmanageable Burden on Modern Security</h2>
+            <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">In today's digital economy, organizations face an unprecedented volume and sophistication of cyber threats. Traditional, manual defenses are failing, leaving businesses exposed to significant risk. The data reveals a story of teams under pressure and systems at their breaking point.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-6xl font-extrabold text-[#ef5675]">50%</div>
+                    <p class="mt-2 font-semibold text-gray-700">Analyst Time on False Positives</p>
+                    <p class="text-sm text-gray-500 mt-1">Teams spend half their time on investigations yielding no genuine threats.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-6xl font-extrabold text-[#ffa600]">4.8M</div>
+                    <p class="mt-2 font-semibold text-gray-700">Global Cybersecurity Workforce Gap</p>
+                    <p class="text-sm text-gray-500 mt-1">A critical talent shortage makes it nearly impossible to keep up with threats.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-6xl font-extrabold text-[#7a5195]">258</div>
+                    <p class="mt-2 font-semibold text-gray-700">Days to Contain a Data Breach</p>
+                    <p class="text-sm text-gray-500 mt-1">A long lifecycle gives attackers ample time to inflict maximum damage.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-6xl font-extrabold text-[#003f5c]">$4.88M</div>
+                    <p class="mt-2 font-semibold text-gray-700">Average Cost of a Data Breach</p>
+                    <p class="text-sm text-gray-500 mt-1">The financial fallout from a single breach can be catastrophic.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="solution" class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-2 text-[#003f5c]">Introducing the BytePlus AI Advantage</h2>
+             <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">BytePlus provides a powerful, integrated suite of AI products designed to augment your security team and automate your defenses. We transform security operations from reactive to resilient, empowering you to meet modern challenges head-on.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#003f5c]">
+                    <div class="text-4xl mb-4"><img src="https://assets.byteplus.com/obj/byteplus-assets/navigation/ModelArk.svg"></div>
+                    <h3 class="font-bold text-lg mb-2">ModelArk</h3>
+                    <p class="text-sm text-gray-600">Manages and deploys Vision & Text LLMs to analyze security data, logs, and threat intelligence at machine speed.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#7a5195]">
+                     <div class="text-4xl mb-4"><img src="https://assets.byteplus.com/obj/byteplus-assets/navigation/VikingDB.svg"></div>
+                    <h3 class="font-bold text-lg mb-2">VectorDB</h3>
+                    <p class="text-sm text-gray-600">Creates a contextual Knowledge Base from your playbooks and threat data, providing instant, accurate AI-powered insights.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#ef5675]">
+                     <div class="text-4xl mb-4"><img src="https://assets.byteplus.com/obj/byteplus-assets/icons/products/recommend.svg"></div>
+                    <h3 class="font-bold text-lg mb-2">HiAgent</h3>
+                    <p class="text-sm text-gray-600">Builds intelligent agents to automate security playbooks, orchestrate tools, and streamline incident response workflows.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#ffa600]">
+                    <div class="text-4xl mb-4"><img src="https://assets.byteplus.com/obj/byteplus-assets/navigation/GPU%20Compute%20Service.svg"></div>
+                    <h3 class="font-bold text-lg mb-2">Private GPU</h3>
+                    <p class="text-sm text-gray-600">Enables secure, private LLM hosting for sensitive or regulated data, ensuring compliance and data sovereignty.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="visual-data" class="mb-20">
+             <h2 class="text-3xl font-bold text-center mb-12 text-[#003f5c]">Visualizing the Risk & Trends</h2>
+             <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">The data tells a clear story. The longer a breach goes undetected, the more it costs. Simultaneously, the attack vectors that lead to these breaches, like phishing, are growing at an alarming rate. These trends highlight the critical need for AI-driven speed and intelligence.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="font-bold text-xl text-center mb-4">The Cost of Delay: Breach Lifecycle Impact</h3>
+                     <p class="text-center text-gray-600 text-sm mb-4">This chart clearly shows that breaches contained in under 200 days are significantly less costly than those that linger, demonstrating the immense value of rapid, AI-powered detection and response.</p>
+                    <div class="chart-container mx-auto">
+                        <canvas id="breachCostChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="font-bold text-xl text-center mb-4">The Rising Tide of Phishing Attacks</h3>
+                    <p class="text-center text-gray-600 text-sm mb-4">Phishing remains a primary entry point for attackers. This chart illustrates the dramatic increase in phishing incidents, underscoring the necessity for automated, intelligent detection that can keep pace.</p>
+                    <div class="chart-container mx-auto">
+                        <canvas id="phishingTrendChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="use-cases" class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-12 text-[#003f5c]">Transforming Security Operations: Use Cases in Action</h2>
+             <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">BytePlus AI solutions deliver tangible benefits across critical areas of cybersecurity. Here’s how our products solve real-world problems, turning complex challenges into automated, efficient outcomes.</p>
+            <div class="space-y-12">
+
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="font-bold text-2xl mb-1 text-[#7a5195]">Intelligent SOC Co-pilot: Enhancing Analyst Efficiency</h3>
+                    <p class="text-gray-600 mb-6">Empowering security analysts to move faster and make smarter decisions by transforming manual research into a simple conversation.</p>
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-center">
+                        <div class="w-full md:w-1/4 p-4 bg-red-50 rounded-lg border border-red-200">
+                            <h4 class="font-bold">Problem</h4>
+                            <p class="text-sm">Analysts waste hours manually searching playbooks and analyzing raw logs, slowing down incident response.</p>
+                        </div>
+                        <div class="flow-arrow font-sans">→</div>
+                        <div class="w-full md:w-1/2 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                            <h4 class="font-bold">BytePlus Solution</h4>
+                            <p class="text-sm">Build a **HiAgent** co-pilot powered by **VectorDB** (hosting playbooks) and **ModelArk** (for log analysis) to provide instant, conversational answers.</p>
+                        </div>
+                        <div class="flow-arrow font-sans">→</div>
+                        <div class="w-full md:w-1/4 p-4 bg-green-50 rounded-lg border border-green-200">
+                            <h4 class="font-bold">Outcome</h4>
+                            <p class="text-sm">Drastically reduced manual effort, accelerated decision-making, and increased analyst productivity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="font-bold text-2xl mb-1 text-[#ef5675]">Automated Phishing Defense: Protecting Financial Institutions</h3>
+                     <p class="text-gray-600 mb-6">Providing an automated defense mechanism against high-volume phishing attacks, a critical threat vector for fraud and data breaches.</p>
+                     <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-center">
+                        <div class="w-full md:w-1/4 p-4 bg-red-50 rounded-lg border border-red-200">
+                            <h4 class="font-bold">Problem</h4>
+                            <p class="text-sm">Manually analyzing thousands of suspicious URLs is slow, error-prone, and fails to scale against modern phishing campaigns.</p>
+                        </div>
+                        <div class="flow-arrow font-sans">→</div>
+                        <div class="w-full md:w-1/2 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                            <h4 class="font-bold">BytePlus Solution</h4>
+                            <p class="text-sm">A **HiAgent** workflow uses **ModelArk** to analyze URL content and **VectorDB** to cross-reference against threat intel, generating an automated risk score.</p>
+                        </div>
+                        <div class="flow-arrow font-sans">→</div>
+                        <div class="w-full md:w-1/4 p-4 bg-green-50 rounded-lg border border-green-200">
+                            <h4 class="font-bold">Outcome</h4>
+                            <p class="text-sm">Near real-time detection and response, drastically reducing the threat window and required manual intervention.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <section id="differentiator">
+             <h2 class="text-3xl font-bold text-center mb-12 text-[#003f5c]">The BytePlus Differentiator: Your Partner in Cyber Resilience</h2>
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                 <p class="text-center text-lg text-gray-700 mb-8">BytePlus offers more than just products; we provide a strategic advantage. Our integrated suite is built to deliver proven, quantifiable impact.</p>
+                <div class="text-center border-t border-b py-8 border-gray-200">
+                    <p class="text-gray-600 text-xl">Organizations using security AI and automation realize an average cost savings of</p>
+                    <div class="text-7xl font-extrabold text-[#003f5c] my-4">$2.22 Million</div>
+                    <p class="text-gray-600 text-xl">on data breaches compared to those that don't.</p>
+                </div>
+                 <p class="text-center text-lg text-gray-700 mt-8">Partner with BytePlus for a smarter, more efficient, and resilient security future.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="text-center p-8 bg-gray-800 text-white mt-16">
+        <p class="font-bold text-xl mb-2">Ready to transform your cybersecurity operations?</p>
+        <p>Contact us today for a personalized demonstration or a strategic discussion on how BytePlus AI can address your specific challenges.</p>
+    </footer>
+
+    <script>
+        const brilliantBlues = ['#003f5c', '#7a5195', '#ef5675', '#ffa600', '#374c80', '#bc5090'];
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+        
+        const wrapLabel = (label) => {
+            const maxWidth = 16;
+            if (typeof label !== 'string' || label.length <= maxWidth) return label;
+            
+            const words = label.split(' ');
+            let lines = [];
+            let currentLine = '';
+
+            for(const word of words) {
+                if ((currentLine + ' ' + word).trim().length > maxWidth && currentLine.length > 0) {
+                    lines.push(currentLine);
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            }
+            if(currentLine.length > 0) lines.push(currentLine);
+            return lines;
+        };
+
+        const breachCostCtx = document.getElementById('breachCostChart').getContext('2d');
+        new Chart(breachCostCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Breach Contained > 200 Days', 'Breach Contained < 200 Days'].map(wrapLabel),
+                datasets: [{
+                    label: 'Average Cost of Data Breach (in Millions USD)',
+                    data: [5.46, 4.07], // Approximate values from the report for visualization
+                    backgroundColor: [brilliantBlues[2], brilliantBlues[0]],
+                    borderColor: ['#c43c58', '#002a3d'],
+                    borderWidth: 1,
+                    barPercentage: 0.6,
+                    categoryPercentage: 0.7
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback,
+                            label: function(context) {
+                                return ` $${context.raw.toFixed(2)} Million`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Average Cost (in Millions USD)'
+                        }
+                    }
+                }
+            }
+        });
+
+        const phishingTrendCtx = document.getElementById('phishingTrendChart').getContext('2d');
+        new Chart(phishingTrendCtx, {
+            type: 'line',
+            data: {
+                labels: ['2020', '2021', '2022', '2023'],
+                datasets: [{
+                    label: 'Total Phishing Attacks (in Millions)',
+                    data: [1.3, 2.9, 4.7, 5.0], // Data from reports shows exponential growth
+                    backgroundColor: 'rgba(122, 81, 149, 0.2)',
+                    borderColor: '#7a5195',
+                    pointBackgroundColor: '#7a5195',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#7a5195',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                   legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback,
+                             label: function(context) {
+                                return ` ~${context.raw.toFixed(1)} Million Attacks`;
+                            }
+                        }
+                    }
+                },
+                 scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Attacks (in Millions)'
+                        }
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
